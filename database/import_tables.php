@@ -423,6 +423,7 @@
 	function displaySignature() {
 		echo "\n\n";
 		echo getSignature();
+		echo "\n\n";
 	}
 
 	/**
