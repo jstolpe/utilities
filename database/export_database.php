@@ -4,7 +4,7 @@
 
 	// combine local and remote users array
 	$users = $remoteUsers;
-	array_unshift($users, $localUser);
+	array_unshift( $users, $localUser );
 
 	// get server user to exporting from
 	$user = getServerUser( $users );
