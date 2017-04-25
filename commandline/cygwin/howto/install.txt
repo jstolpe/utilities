@@ -2,9 +2,9 @@ Cygwin Install
 
 ==========================================================================
 
-1. Dowload cygwin setup.exe from https://www.cygwin.com/.
+Step 1. Dowload cygwin setup.exe from https://www.cygwin.com/.
 
-2. HELPFUL PACKAGES TO SELECT WHEN RUNNING SETUP
+Step 2. HELPFUL PACKAGES TO SELECT WHEN RUNNING SETUP
 -autossh
 -bash-completion
 -dbus-bash-completion
@@ -42,10 +42,10 @@ Cygwin Install
 -zlib-devel
 -zlib0
 
-3. Running setup again to install missing packages, running again will only 
+Step 3. Running setup again to install missing packages, running again will only 
 update the current install so you will not lose anything.
 
-4. List packages installed
+Step 4. List packages installed
 ~$ cygcheck -c
 
 ==========================================================================
