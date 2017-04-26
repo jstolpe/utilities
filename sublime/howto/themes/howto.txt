@@ -1,0 +1,42 @@
+Sublime Text Themes
+
+Packages: 
+- Colorsublime
+
+My custom notepad++ theme notepad+.thTheme is included in this folder.
+==========================================================================
+
+Step 1: Go to http://tmtheme-editor.herokuapp.com/#!/editor/theme/Monokai
+
+Step 2: In the color tab on the left you can edit the colors for just 
+about everything and the changes can be seen in the code example in the 
+tab on the right.
+
+Step 3: Once you have the colors just the way you like, click the 
+"Download" button and save the file. The file should save as a ".tmTheme"
+file. 
+
+Step 4: To get your downloaded theme into Sublime Text, install the 
+package "Colorsublime" through the package manager.
+
+Step 5: Install any theme by running "Colorsublime: Install Theme". This 
+will create our custom themes folder "Colorsublime - Theme" for us which 
+is used to store our custom themes.
+
+Step 6: Go to Preferences > Browse Packages... > Colorsublime - Themes and 
+place the ".tmTheme" file you downloaded in the "Colorsublime - Theme" 
+folder.
+
+Step 7: Your new custom theme should be all set for use under Preferences > 
+Color Scheme > Colorsublime - Themes > your theme.
+
+==========================================================================
+
+              (           (        )   (               )   (     (         
+              )\ )  *   ) )\ )  ( /(   )\ )  *   )  ( /(   )\ )  )\ )      
+   (      (  (()/(` )  /((()/(  )\()) (()/(` )  /(  )\()) (()/( (()/( (    
+   )\     )\  /(_))( )(_))/(_))((_)\   /(_))( )(_))((_)\   /(_)) /(_)))\   
+  ((_) _ ((_)(_)) (_(_())(_))   _((_) (_)) (_(_())   ((_) (_))  (_)) ((_)  
+ _ | || | | |/ __||_   _||_ _| | \| | / __||_   _|  / _ \ | |   | _ \| __| 
+| || || |_| |\__ \  | |   | |  | .` | \__ \  | |   | (_) || |__ |  _/| _|  
+ \__/  \___/ |___/  |_|  |___| |_|\_| |___/  |_|    \___/ |____||_|  |___|
