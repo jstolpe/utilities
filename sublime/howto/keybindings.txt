@@ -18,16 +18,16 @@ ctrl+r and type function name
 [GOTO LINE NUMBER IN CURRENT FILE]
 ctrl+g and enter line number
 
-[OPEN FILE EXPLORER]
+[PROJECT FILE SEARCH]
 ctrl+p and type file name
 Note: All files within the current sublime project are browsable. Simply start
 typing a file name to begin filter.
 
-[OPEN SIDEBAR FOLDERS VIEW]
+[PROJECT FOLDER TREE VIEW]
 ctrl+k+b
 Note: All files within the current sublime project are visible.
 
-[SEARCH ALL FILES IN PROJECT]
+[PROJECT FIND/REPLACE]
 ctrl+shift+f
 Note: Searches all files within the current sublime project.
 
