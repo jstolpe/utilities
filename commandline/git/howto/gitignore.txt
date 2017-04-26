@@ -1,13 +1,29 @@
-Sublime Text Install
+gitignore
 
+How to ignore files so they do not go into the repo.
 ==========================================================================
 
-Step 1: Go to www.sublimetext.com and download the setup.exe for the OS 
-you are running.
+[CREATE]
+Step 1: cd to repo you want the .gitignore in.
 
-Step 2: Run the setup.exe file and follow the prompts.
+Step 2: Run "touch .gitignore" to create the .gitignore file.
 
-Step 3: Sublime Text is installed and ready for use.
+Step 3: Open the .gitignore and add files and folder you want ignored. 
+Each file or folder to be ignored should be on a newline.
+
+Note: You can add gitignore inside any folder.
+
+
+[.gitignore examples]
+
+#Ignore all files named defines.php
+defines.php
+
+#Ignore all files with extension .sh
+*.sh
+
+#Ignore the scripts folder
+scripts/
 
 ==========================================================================
 

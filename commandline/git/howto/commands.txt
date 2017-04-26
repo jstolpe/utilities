@@ -1,13 +1,25 @@
-Sublime Text Install
+Git Commands
 
 ==========================================================================
 
-Step 1: Go to www.sublimetext.com and download the setup.exe for the OS 
-you are running.
+[clone with https]
+~$ git clone https://github.com/user/repo.git /folder/to/clone/repo/into
 
-Step 2: Run the setup.exe file and follow the prompts.
+[Repo status]
+~$ git status
 
-Step 3: Sublime Text is installed and ready for use.
+[Add changes for commit]
+~$ git add --all
+
+[Commit]
+~$ git commit -m "commit message goes here"
+
+[Push commit to repo]
+~$ git push
+
+[Checkout]
+~$ git checkout /path/to/file/folder/to/checkout/from/repo
+Note: This will overwrite local copy with what is in the repo.
 
 ==========================================================================
 

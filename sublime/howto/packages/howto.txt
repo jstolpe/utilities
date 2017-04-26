@@ -2,7 +2,6 @@ Sublime Text Packages
 
 ==========================================================================
 
-
 [INSTALL PACKAGE CONTROL]
 Step 1: ctrl+shift+p > type "package" and select install option. If this 
 does is not working, go to Step 2.

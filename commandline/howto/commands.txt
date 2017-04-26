@@ -46,7 +46,6 @@ Notes: -a(recursive), -v(verbose), -p(progress), -n(use for dry run), --delete(r
 [mysql import .sql file into databse]
 ~$ mysql -u[user] -p[password] -h [host] -D [databaseName] < fileToImportIntoDB.sql
 
-
 ==========================================================================
 
               (           (        )   (               )   (     (         
