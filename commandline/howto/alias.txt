@@ -32,6 +32,8 @@ commands!
 alias ssh_serverName_username="ssh root@ipAddress"
 alias go_wamp="cd /cygdrive/c/wamp/"
 alias go_utils="cd /cygdrive/c/wamp/utilities"
+alias go_db_scripts="cd /cygdrive/c/wamp/utilities/database/"
+alias go_create_project="cd /cygdrive/c/wamp/utilities/sublime/create_project/"
 
 ==========================================================================
 
