@@ -6,9 +6,7 @@ The purpose of this repo is to make life easier and more efficient for a web dev
 3. Sublime Text scripts and howtos.
 4. Webserver howtos on htaccess.
 
-I will keep updating this repo with helpful utilities.
-
-    ==========================================================================
+==========================================================================
     
                   (           (        )   (               )   (     (         
                   )\ )  *   ) )\ )  ( /(   )\ )  *   )  ( /(   )\ )  )\ )      
