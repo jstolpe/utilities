@@ -34,8 +34,8 @@ Step 2. HELPFUL PACKAGES TO SELECT WHEN RUNNING SETUP
 -perl
 -perl-DBD-mysql
 -perl-DBD-mysql-debuginfo
--per-DBI
--per-Params-Utils
+-perl-DBI
+-perl-Params-Utils
 -texinfo
 -tzcode
 -xz
