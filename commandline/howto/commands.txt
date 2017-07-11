@@ -35,7 +35,7 @@ Notes: Add the public key to the authorized_keys file on the server you want to 
 Notes: -a(recursive), -v(verbose), -p(progress), -n(use for dry run), --delete(removes files in folderB that do not exists in folderA)
 
 [Run script as process in the background and log its output to txt file]
-~$ nohup php /path/to/scriptToRun.php > scriptToRunLog.txt &
+~$ nohup /path/to/scriptToRun > scriptToRunLog.txt &
 
 [mysql dump database into .sql file]
 ~$ mysqldump -u[user] -p[password] -h [host] [databaseName] > fileToDumpDBInto.sql
@@ -45,6 +45,12 @@ Notes: -a(recursive), -v(verbose), -p(progress), -n(use for dry run), --delete(r
 
 [mysql import .sql file into databse]
 ~$ mysql -u[user] -p[password] -h [host] -D [databaseName] < fileToImportIntoDB.sql
+
+[Save script process id to txt file and then kill that process]
+~$ nohup /path/to/scriptToRun > scriptToRunLogFile.log 2>&1 &
+~$ echo $! > pidTxtFile.txt
+~$ kill -9 'pidTxtFile.txt'
+~$ rm pidTxtFile.txt
 
 ==========================================================================
 
