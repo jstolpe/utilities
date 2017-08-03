@@ -58,6 +58,45 @@
 	displaySignature();
 
 	/**
+	 * Make db connection
+	 *
+	 * @param Array $user
+	 *
+	 * @return Object
+	 */
+	function dbConnect( $user ) {
+		try { // make connection to database
+			$db = new PDO( "mysql:host=" . $user['host'], $user['user'], $user['password']  );
+			$db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+		} catch( PDOException $ex ) { // we have failed
+			die( "Failed to connect to the database: " . $ex->getMessage() ); 
+		}
+		
+		return $db;
+	}
+
+	/**
+	 * Get databases on server
+	 *
+	 * @param Object $dbh
+	 *
+	 * @return Array dbs
+	 */
+	function getDbs( $dbh ) {
+		// get databases on server
+		$dbs = $dbh->query( 'SHOW DATABASES' );
+
+		// store databases found in an array
+		$dbsFound = array();
+
+		while( ( $db = $dbs->fetchColumn( 0 ) ) !== false ) { // put dbs in array
+			$dbsFound[] = $db;
+		}
+
+		return $dbsFound;
+	}
+
+	/**
 	 * Verify database pick
 	 *
 	 * @param String $localDatabase
