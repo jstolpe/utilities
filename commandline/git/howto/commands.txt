@@ -17,6 +17,27 @@ Git Commands
 [Push commit to repo]
 ~$ git push
 
+[List branches]
+~$ git branch -a
+
+[Switch to a branch]
+~$ git checkout branchName
+
+[Create branch locally]
+~$ git checkout -b newBranchName nameOfExistingBranchToBranchFrom
+
+[Push branch to git remote server]
+~$ git push origin branchName
+
+[Merge branch: --no-ff prevents loss of information about the existence of a branch in the commit log]
+~$ git merge --no-ff branchNameToMergeIntoCurrentBranch
+
+[Delete branch locally]
+~$ git branch -d branchName
+
+[Delete branch on remote server]
+~$ git push origin --delete branchName
+
 [Checkout]
 ~$ git checkout /path/to/file/folder/to/checkout/from/repo
 Note: This will overwrite local copy with what is in the repo.
