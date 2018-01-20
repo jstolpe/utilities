@@ -63,8 +63,11 @@
 		// command line stuff
 		echo "\nCreating .sql file of " . $databaseName . " database from server" . $user['server'] . " on localhost...\n";
 
-		// command to dump the database from the remote server onto our localhost
-		exec( 'mysqldump -u' . $user['user'] . ' -p' . $user['password'] . ' -h ' . $user['host'] . ' ' . $databaseName . ' > ' . $pathToDbFile );
+		if ( $user['password'] ) { // command to dump the database from the remote server onto our localhost
+			exec( 'mysqldump --single-transaction -u' . $user['user'] . ' -p' . $user['password'] . ' -h ' . $user['host'] . ' ' . $databaseName . ' > ' . $pathToDbFile );
+		} else {
+			exec( 'mysqldump --single-transaction -u' . $user['user'] . ' -h ' . $user['host'] . ' ' . $databaseName . ' > ' . $pathToDbFile );
+		}
 
 		// .sql file created
 		echo "\n..." . $databaseName . ".sql file of " . $databaseName . " database created on localhost\n";

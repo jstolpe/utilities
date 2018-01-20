@@ -88,7 +88,7 @@
 		echo "\nCreating .sql file of " . $databaseName . " database from remote server" . $user['server'] . " on localhost...\n";
 
 		// command to dump the database from the remote server onto our localhost
-		exec( 'mysqldump -u' . $user['user'] . ' -p' . $user['password'] . ' -h ' . $user['host'] . ' ' . $databaseName . ' > ' . $pathToDbFile );
+		exec( 'mysqldump --single-transaction -u' . $user['user'] . ' -p' . $user['password'] . ' -h ' . $user['host'] . ' ' . $databaseName . ' > ' . $pathToDbFile );
 
 		// .sql file created
 		echo "\n..." . $databaseName . ".sql file of " . $databaseName . " database created on localhost\n";

@@ -75,6 +75,27 @@
 	displaySignature();
 
 	/**
+	 * Pick a database
+	 *
+	 * @param Array $user
+	 * @param Array $dbs
+	 *
+	 * @return Integer
+	 */
+	function pickRemoteDb( $user, $dbs ) {
+		// what database do you want to import
+		$whatDatabaseString = "\nEnter database [#] to import from remote server " . $user['server'] . " to localhost: ";
+		$dbNumberSelected = getInput( $whatDatabaseString );
+
+		while ( !array_key_exists( $dbNumberSelected, $dbs ) ) { // keep asking until valid number is given
+			$dbNumberSelected = getInput( $whatDatabaseString );
+		}
+
+		// return db selected
+		return $dbs[$dbNumberSelected];
+	}
+
+	/**
 	 * Verify database pick
 	 *
 	 * @param String $localDatabase
@@ -173,7 +194,7 @@
 		}
 		
 		// command to dump the database from the remote server onto our localhost
-		exec( 'mysqldump -u' . $user['user'] . ' -p' . $user['password'] . ' -h ' . $user['host'] . ' ' . $databaseName . ' ' . $tablesString .  '> ' . $pathToDbFile );
+		exec( 'mysqldump --single-transaction -u' . $user['user'] . ' -p' . $user['password'] . ' -h ' . $user['host'] . ' ' . $databaseName . ' ' . $tablesString .  '> ' . $pathToDbFile );
 
 		// .sql file created
 		echo "\n..." . $databaseName . ".sql file of " . $databaseName . " database tables created on localhost\n";
