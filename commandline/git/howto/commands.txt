@@ -5,6 +5,15 @@ Git Commands
 [clone with https]
 ~$ git clone https://github.com/user/repo.git /folder/to/clone/repo/into
 
+[Initialize repo in current folder]
+~$ git init
+
+[Create file]
+~$ touch filename
+
+[Add readme]
+~$ git add README.md
+
 [Repo status]
 ~$ git status
 
@@ -13,6 +22,9 @@ Git Commands
 
 [Commit]
 ~$ git commit -m "commit message goes here"
+
+[Commit log]
+~$ git log
 
 [Push commit to repo]
 ~$ git push
