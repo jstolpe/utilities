@@ -219,7 +219,7 @@
 	 * @return Array
 	 */
 	function getDumpFiles() {
-		$dumpFiles = scandir( 'dumps' );
+		$dumpFiles = scandir( PATH_TO_DUMPS );
 
 		$validFiles = array();
 
